@@ -5,8 +5,8 @@
 * JDK 8 ou 9
 * Eclipse recent (de préférence Oxygen) installé
 * Plugins Eclipse à installer : infinitest, natural (chercher "cucumber")
-
-Si vous passez par le proxy de l'université, configurer votre Eclipse (Window-> Preferences -> chercher 'proxy") et votre conf maven  `~/.m2/settings.xml` :
+* Si possible, utiliser votre connection Internet (data).
+* Si et seulement si vous passez par le proxy de l'université, configurer votre Eclipse (Window-> Preferences -> chercher 'proxy") et votre conf maven  `~/.m2/settings.xml` :
 ```
 <settings>
   <proxies>
