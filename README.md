@@ -1,4 +1,4 @@
-Laure Duchemin et Quentin Lexert
+# Laure Duchemin et Quentin Lexert
 
 # Pré-requis 
 * Disposer d'au moins un compte github par binome
