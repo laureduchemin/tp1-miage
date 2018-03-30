@@ -37,4 +37,16 @@ Then la liste ordonnée doit être :
 | false      | LU		 		 | bbbbb					| 2016-12-01T14:03:00Z | 
 | false      | PAS_ENVOYE 		 | aaaaa					| 2017-01-01T14:03:00Z |
 
+Scenario: ordre d'une liste de mails
+Given les mails :
+| important  | statut   		 | sujet			  		| date                 | 
+| false      | LU         		 | bbbbb					| 2018-02-06T10:05:00Z |
+| true       | PAS_ENVOYE 		 | aaaaa					| 2018-03-21T07:08:00Z |
+| true       | LU		 		 | bbbbb					| 2018-03-30T16:03:00Z |
 
+When je trie
+Then la liste ordonnée doit être :
+| important  | statut   		 | sujet			  		| date                 |
+| true       | PAS_ENVOYE 		 | aaaaa					| 2018-01-09T18:03:00Z |
+| false      | LU		 		 | aaaaa					| 2016-11-07T14:45:00Z | 
+| false      | LU        		 | aaaaa					| 2017-01-25T19:26:00Z |
